@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="type lab">
+  <title>TypeScript Type Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">TS<span>.</span>LAB</a>
+    <span class="tag">ADVANCED TYPESCRIPT</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">TYPE-SAFETY PLAYGROUND</p>
+      <h1>Master your <span>types.</span></h1>
+      <p class="subtitle">
+        Practice advanced TypeScript concepts through
+        simple, hands-on coding exercises.
+      </p>
+    </section>
+
+    <section class="topics">
+      <article class="topic-card">
+        <span class="number">01</span>
+        <h2>Union & Intersection</h2>
+        <p>Combine types and build flexible data structures.</p>
+        <button class="topic-btn" data-topic="union">
+          Explore <span>↗</span>
+        </button>
+      </article>
+
+      <article class="topic-card">
+        <span class="number">02</span>
+        <h2>Utility Types</h2>
+        <p>Transform existing types with built-in utilities.</p>
+        <button class="topic-btn" data-topic="utility">
+          Explore <span>↗</span>
+        </button>
+      </article>
+
+      <article class="topic-card">
+        <span class="number">03</span>
+        <h2>Enums</h2>
+        <p>Represent a set of named constant values.</p>
+        <button class="topic-btn" data-topic="enums">
+          Explore <span>↗</span>
+        </button>
+      </article>
+
+      <article class="topic-card">
+        <span class="number">04</span>
+        <h2>Type Guards</h2>
+        <p>Narrow types and write safer conditional logic.</p>
+        <button class="topic-btn" data-topic="guards">
+          Explore <span>↗</span>
+        </button>
+      </article>
+    </section>
+
+    <section class="exercise">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PRACTICE AREA</p>
+          <h2 id="exerciseTitle">Union Types</h2>
+        </div>
+        <span class="level">LEVEL 01</span>
+      </div>
+
+      <p id="exerciseDescription">
+        Select a topic above to begin your exercise.
+      </p>
+
+      <div class="code-box">
+        <div class="code-header">
+          <span>script.ts</span>
+          <span>TypeScript</span>
+        </div>
+        <pre id="codePreview">type Status = "pending" | "success" | "error";</pre>
+      </div>
+
+      <div class="code-editor">
+        <textarea id="codeEditor" spellcheck="false" placeholder="Write your TypeScript code here..."></textarea>
+        <div class="controls">
+          <button id="runBtn">▶ Run Code</button>
+          <button id="resetBtn">↺ Reset</button>
+        </div>
+        <div class="output-panel">
+          <div class="output-header">
+            <span>Console Output</span>
+          </div>
+          <pre id="output"></pre>
+        </div>
+        <div class="error-panel" id="error"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>TYPE LAB <span>·</span> Learn by building.</p>
+  </footer>
+  <script type="module" src="./dist/main.js"></script>
+</body>
+</html>
+
